@@ -2,3 +2,6 @@ source "https://rubygems.org"
 
 gem "sorbet"
 gem "tapioca"
+
+gem "standard"
+gem "standard-sorbet"
