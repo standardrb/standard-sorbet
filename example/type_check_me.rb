@@ -1,3 +1,3 @@
-# typed: true
+# typed: banana
 
 puts "Please type check me"
