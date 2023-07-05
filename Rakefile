@@ -18,4 +18,4 @@ task :lint_test do
   end
 end
 
-task default: %i[test standard:fix]
+task default: %i[test standard:fix lint_test]
