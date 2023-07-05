@@ -9,4 +9,13 @@ end
 
 require "standard/rake"
 
+desc "Verify linting works in example project"
+task :lint_test do
+  Rake::Task["install"].execute
+  output = `cd example; bundle exec standardrb`
+  unless output.include?("type_check_me.rb:1:1: Sorbet/FalseSigil: Invalid Sorbet sigil `banana`.")
+    fail "Expected linting violation not detected."
+  end
+end
+
 task default: %i[test standard:fix]
