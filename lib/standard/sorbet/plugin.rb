@@ -2,6 +2,7 @@ module Standard::Sorbet
   class Plugin < LintRoller::Plugin
     def initialize(config)
       @config = config
+      @merges_upstream_metadata = Standard::MergesUpstreamMetadata.new
     end
 
     def about
@@ -20,10 +21,15 @@ module Standard::Sorbet
     def rules(context)
       trick_rubocop_into_thinking_we_required_rubocop_sorbet!
 
+      rules = @merges_upstream_metadata.merge(
+        YAML.load_file(Pathname.new(__dir__).join("../../../config/base.yml")),
+        YAML.load_file(Pathname.new(Gem.loaded_specs["rubocop-sorbet"].full_gem_path).join("config/default.yml"))
+      )
+
       LintRoller::Rules.new(
-        type: :path,
+        type: :object,
         config_format: :rubocop,
-        value: Pathname.new(__dir__).join("../../../config/base.yml")
+        value: rules
       )
     end
 
