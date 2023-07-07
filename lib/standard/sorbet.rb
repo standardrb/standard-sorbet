@@ -2,7 +2,7 @@ require "lint_roller"
 
 require_relative "sorbet/version"
 require_relative "sorbet/plugin"
-require "standard/yaml/merges_upstream_metadata"
+require "standard/plugin_support"
 
 module Standard
   module Sorbet

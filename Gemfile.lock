@@ -44,7 +44,7 @@ GEM
     rubocop-sorbet (0.7.0)
       rubocop (>= 0.90.0)
     ruby-progressbar (1.13.0)
-    standard (1.29.0)
+    standard (1.30.0)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.0)
       rubocop (~> 1.52.0)

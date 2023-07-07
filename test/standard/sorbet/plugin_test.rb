@@ -6,8 +6,11 @@ module Standard::Sorbet
       @subject = Plugin.new({})
     end
 
-    def test_paths
-      assert_match "base.yml", @subject.rules(LintRoller::Context.new(target_ruby_version: RUBY_VERSION)).value.to_s
+    def test_rules
+      rules = @subject.rules(LintRoller::Context.new(target_ruby_version: RUBY_VERSION))
+
+      assert_equal :object, rules.type
+      assert_equal true, rules.value["Sorbet/AllowIncompatibleOverride"]["Enabled"]
     end
   end
 end

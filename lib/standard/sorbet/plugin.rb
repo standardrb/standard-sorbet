@@ -2,7 +2,7 @@ module Standard::Sorbet
   class Plugin < LintRoller::Plugin
     def initialize(config)
       @config = config
-      @merges_upstream_metadata = Standard::MergesUpstreamMetadata.new
+      @merges_upstream_metadata = Standard::PluginSupport::MergesUpstreamMetadata.new
     end
 
     def about
