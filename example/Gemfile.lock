@@ -1,3 +1,10 @@
+PATH
+  remote: ..
+  specs:
+    standard-sorbet (0.0.1)
+      lint_roller (~> 1.0)
+      rubocop-sorbet (~> 0.7.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -40,13 +47,13 @@ GEM
     rubocop-sorbet (0.7.0)
       rubocop (>= 0.90.0)
     ruby-progressbar (1.13.0)
-    sorbet (0.5.10900)
-      sorbet-static (= 0.5.10900)
-    sorbet-runtime (0.5.10900)
-    sorbet-static (0.5.10900-universal-darwin-22)
-    sorbet-static-and-runtime (0.5.10900)
-      sorbet (= 0.5.10900)
-      sorbet-runtime (= 0.5.10900)
+    sorbet (0.5.10904)
+      sorbet-static (= 0.5.10904)
+    sorbet-runtime (0.5.10904)
+    sorbet-static (0.5.10904-universal-darwin-22)
+    sorbet-static-and-runtime (0.5.10904)
+      sorbet (= 0.5.10904)
+      sorbet-runtime (= 0.5.10904)
     spoom (1.2.2)
       erubi (>= 1.10.0)
       sorbet (>= 0.5.10187)
@@ -64,9 +71,6 @@ GEM
     standard-performance (1.1.0)
       lint_roller (~> 1.0)
       rubocop-performance (~> 1.18.0)
-    standard-sorbet (0.0.1)
-      lint_roller (~> 1.0)
-      rubocop-sorbet (~> 0.7.0)
     syntax_tree (6.1.1)
       prettier_print (>= 1.2.0)
     tapioca (0.11.7)
@@ -94,7 +98,7 @@ PLATFORMS
 DEPENDENCIES
   sorbet
   standard
-  standard-sorbet
+  standard-sorbet!
   tapioca
 
 BUNDLED WITH
