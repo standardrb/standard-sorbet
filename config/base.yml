@@ -232,7 +232,10 @@ Sorbet/ValidSigil:
   RequireSigilOnAllFiles: false
   SuggestedStrictness: "false"
   MinimumStrictness: "false"
-  Versioe:
+  VersionAdded: 0.3.3
+  Include:
+  - "**/*.{rb,rbi,rake,ru}"
+  Exclude:
   - bin/**/*
   - db/**/*.rb
   - script/**/*
