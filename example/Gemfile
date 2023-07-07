@@ -4,4 +4,4 @@ gem "sorbet"
 gem "tapioca"
 
 gem "standard"
-gem "standard-sorbet"
+gem "standard-sorbet", path: ".."
