@@ -10,7 +10,7 @@ GEM
   specs:
     ast (2.4.2)
     docile (1.4.1)
-    json (2.6.3)
+    json (2.8.2)
     language_server-protocol (3.17.0.3)
     lint_roller (1.1.0)
     m (1.6.1)
