@@ -1,3 +1,6 @@
+Sorbet/Refinement:
+  Enabled: pending
+
 Sorbet/AllowIncompatibleOverride:
   Enabled: true
 
@@ -37,7 +40,25 @@ Sorbet/ForbidRBIOutsideOfAllowedPaths:
 Sorbet/ForbidIncludeConstLiteral:
   Enabled: false
 
+Sorbet/ForbidTypeAliasedShapes:
+  Enabled: false
+
+Sorbet/ForbidSig:
+  Enabled: false
+
+Sorbet/ForbidSigWithRuntime:
+  Enabled: false
+
+Sorbet/ForbidSigWithoutRuntime:
+  Enabled: false
+
 Sorbet/ForbidSuperclassConstLiteral:
+  Enabled: false
+
+Sorbet/ForbidTEnum:
+  Enabled: false
+
+Sorbet/ForbidTStruct:
   Enabled: false
 
 Sorbet/ForbidTUnsafe:
@@ -55,11 +76,17 @@ Sorbet/HasSigil:
 Sorbet/IgnoreSigil:
   Enabled: false
 
+Sorbet/ImplicitConversionMethod:
+  Enabled: false
+
 Sorbet/KeywordArgumentOrdering:
   Enabled: true
 
-Sorbet/OneAncestorPerLine:
-  Enabled: false
+Sorbet/ObsoleteStrictMemoization:
+  Enabled: true
+
+Sorbet/BuggyObsoleteStrictMemoization:
+  Enabled: true
 
 Sorbet/RedundantExtendTSig:
   Enabled: false
@@ -83,4 +110,13 @@ Sorbet/TypeAliasName:
   Enabled: true
 
 Sorbet/ValidSigil:
+  Enabled: true
+
+Sorbet/VoidCheckedTests:
+  Enabled: true
+
+Sorbet/MultipleTEnumValues:
+  Enabled: true
+
+Sorbet/ForbidComparableTEnum:
   Enabled: true
