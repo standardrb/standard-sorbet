@@ -4,6 +4,9 @@ Sorbet/AllowIncompatibleOverride:
 Sorbet/BindingConstantWithoutTypeAlias:
   Enabled: true
 
+Sorbet/BuggyObsoleteStrictMemoization:
+  Enabled: true
+
 Sorbet/CallbackConditionalsBinding:
   Enabled: false
 
@@ -28,6 +31,9 @@ Sorbet/EnforceSignatures:
 Sorbet/FalseSigil:
   Enabled: true
 
+Sorbet/ForbidComparableTEnum:
+  Enabled: true
+
 Sorbet/ForbidExtendTSigHelpersInShims:
   Enabled: true
 
@@ -37,7 +43,22 @@ Sorbet/ForbidRBIOutsideOfAllowedPaths:
 Sorbet/ForbidIncludeConstLiteral:
   Enabled: false
 
+Sorbet/ForbidSig:
+  Enabled: false
+
+Sorbet/ForbidSigWithRuntime:
+  Enabled: false
+
+Sorbet/ForbidSigWithoutRuntime:
+  Enabled: false
+
 Sorbet/ForbidSuperclassConstLiteral:
+  Enabled: false
+
+Sorbet/ForbidTEnum:
+  Enabled: false
+
+Sorbet/ForbidTStruct:
   Enabled: false
 
 Sorbet/ForbidTUnsafe:
@@ -46,10 +67,16 @@ Sorbet/ForbidTUnsafe:
 Sorbet/ForbidTUntyped:
   Enabled: false
 
+Sorbet/ForbidTypeAliasedShapes:
+  Enabled: false
+
 Sorbet/ForbidUntypedStructProps:
   Enabled: true
 
 Sorbet/HasSigil:
+  Enabled: false
+
+Sorbet/ImplicitConversionMethod:
   Enabled: false
 
 Sorbet/IgnoreSigil:
@@ -58,10 +85,16 @@ Sorbet/IgnoreSigil:
 Sorbet/KeywordArgumentOrdering:
   Enabled: true
 
-Sorbet/OneAncestorPerLine:
-  Enabled: false
+Sorbet/MultipleTEnumValues:
+  Enabled: true
+
+Sorbet/ObsoleteStrictMemoization:
+  Enabled: true
 
 Sorbet/RedundantExtendTSig:
+  Enabled: false
+
+Sorbet/Refinement:
   Enabled: false
 
 Sorbet/SignatureBuildOrder:
@@ -83,4 +116,7 @@ Sorbet/TypeAliasName:
   Enabled: true
 
 Sorbet/ValidSigil:
+  Enabled: true
+
+Sorbet/VoidCheckedTests:
   Enabled: true

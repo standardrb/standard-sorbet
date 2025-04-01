@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.summary = "Standard Ruby Plugin providing configuration for rubocop-sorbet"
   spec.homepage = "https://github.com/standardrb/standard-sorbet"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 2.7.0"
+  spec.required_ruby_version = ">= 3.0.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
@@ -29,5 +29,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "lint_roller", "~> 1.1"
-  spec.add_dependency "rubocop-sorbet", "~> 0.7.0"
+  spec.add_dependency "rubocop-sorbet", "~> 0.9.0"
 end
