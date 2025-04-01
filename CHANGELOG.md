@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [0.0.3]
+
+- Update to rubocop-sorbet 0.9.0
+
 ## [0.0.2]
 
 - Moves support module from standard to lint_roller
