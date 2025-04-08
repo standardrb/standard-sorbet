@@ -3,7 +3,7 @@ PATH
   specs:
     standard-sorbet (0.0.3)
       lint_roller (~> 1.1)
-      rubocop-sorbet (~> 0.9.0)
+      rubocop-sorbet (>= 0.9, < 0.11)
 
 GEM
   remote: https://rubygems.org/
@@ -38,15 +38,14 @@ GEM
       rubocop-ast (>= 1.38.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 4.0)
-    rubocop-ast (1.43.0)
+    rubocop-ast (1.44.0)
       parser (>= 3.3.7.2)
       prism (~> 1.4)
     rubocop-performance (1.24.0)
       lint_roller (~> 1.1)
       rubocop (>= 1.72.1, < 2.0)
       rubocop-ast (>= 1.38.0, < 2.0)
-    rubocop-sorbet (0.9.0)
-      lint_roller (~> 1.1)
+    rubocop-sorbet (0.10.0)
       rubocop (>= 1)
     ruby-progressbar (1.13.0)
     simplecov (0.22.0)
